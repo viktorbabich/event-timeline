@@ -6,7 +6,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { EventListComponent } from './event-list.component';
 import { TransactionComponent } from './transaction.component';
-import { TransactionService } from './transaction.service';
+import { NewsComponent } from './news.component';
+import { EventService } from './event.service';
 import { NewTransactionComponent } from './new-transaction.component';
 import { HeaderComponent } from './header.component';
 
@@ -21,6 +22,7 @@ const appRoutes: Routes = [
     AppComponent,
     EventListComponent,
     TransactionComponent,
+    NewsComponent,
     NewTransactionComponent,
     HeaderComponent
   ],
@@ -30,7 +32,7 @@ const appRoutes: Routes = [
     FormsModule, 
     ReactiveFormsModule 
   ],
-  providers: [TransactionService],
+  providers: [EventService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
