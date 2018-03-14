@@ -14,7 +14,7 @@ export const EVENTS: (Transaction|News)[] = [
 	{
 		title: "Открытие нового офиса",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, officia?",
-		date: new Date("February 4, 2016 10:13:00"),
+		date: new Date("February 8, 2016 10:13:00"),
 		type: "news"
 	},
 	{
@@ -23,7 +23,7 @@ export const EVENTS: (Transaction|News)[] = [
 		from: "Катя",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, officia?", 
 		direction: "приход",
-		date: new Date("February 4, 2016 10:13:00"),
+		date: new Date("February 2, 2016 10:13:00"),
 		type: "transaction"
 	},
 	{
@@ -32,7 +32,7 @@ export const EVENTS: (Transaction|News)[] = [
 		from: "Юра",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, officia?", 
 		direction: "расход",
-		date: new Date("February 4, 2016 10:13:00"),
+		date: new Date("February 1, 2016 10:13:00"),
 		type: "transaction"
 	}
 ]
