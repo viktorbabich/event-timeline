@@ -7,7 +7,7 @@ export const TRANSACTIONS: Transaction[] = [
 		from: "Вова",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, officia?",
 		direction: "приход",
-		date: "15.02.17",
+		date: new Date(),
 		type: "транзакция"
 	},
 	{
@@ -16,7 +16,7 @@ export const TRANSACTIONS: Transaction[] = [
 		from: "Жека",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, officia?", 
 		direction: "расход",
-		date: "23.12.18",
+		date: new Date(),
 		type: "транзакция"
 	},
 	{
@@ -25,7 +25,7 @@ export const TRANSACTIONS: Transaction[] = [
 		from: "Катя",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, officia?", 
 		direction: "приход",
-		date: "26.05.18",
+		date: new Date(),
 		type: "транзакция"
 	},
 	{
@@ -34,7 +34,7 @@ export const TRANSACTIONS: Transaction[] = [
 		from: "Юра",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, officia?", 
 		direction: "расход",
-		date: "02.12.18",
+		date: new Date(),
 		type: "транзакция"
 	}
 ]

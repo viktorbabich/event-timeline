@@ -4,6 +4,6 @@ export interface Transaction {
 	from: string, 
 	description: string, 
 	direction: string,
-	date: string, 
+	date: Date, 
 	type: string 
 }

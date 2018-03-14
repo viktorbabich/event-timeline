@@ -8,13 +8,13 @@ export const EVENTS: (Transaction|News)[] = [
 		from: "Вова",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, officia?",
 		direction: "приход",
-		date: "15.02.17",
+		date: new Date("February 4, 2016 10:13:00"),
 		type: "transaction"
 	},
 	{
 		title: "Открытие нового офиса",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, officia?",
-		date: "213123",
+		date: new Date("February 4, 2016 10:13:00"),
 		type: "news"
 	},
 	{
@@ -23,7 +23,7 @@ export const EVENTS: (Transaction|News)[] = [
 		from: "Катя",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, officia?", 
 		direction: "приход",
-		date: "26.05.18",
+		date: new Date("February 4, 2016 10:13:00"),
 		type: "transaction"
 	},
 	{
@@ -32,7 +32,7 @@ export const EVENTS: (Transaction|News)[] = [
 		from: "Юра",
 		description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, officia?", 
 		direction: "расход",
-		date: "02.12.18",
+		date: new Date("February 4, 2016 10:13:00"),
 		type: "transaction"
 	}
 ]

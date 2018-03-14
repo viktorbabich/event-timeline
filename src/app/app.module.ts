@@ -10,6 +10,7 @@ import { NewsComponent } from './news.component';
 import { EventService } from './event.service';
 import { NewTransactionComponent } from './new-transaction.component';
 import { HeaderComponent } from './header.component';
+import { TransactionService } from './transaction.service';
 
 
 const appRoutes: Routes = [
@@ -32,7 +33,7 @@ const appRoutes: Routes = [
     FormsModule, 
     ReactiveFormsModule 
   ],
-  providers: [EventService],
+  providers: [EventService, TransactionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

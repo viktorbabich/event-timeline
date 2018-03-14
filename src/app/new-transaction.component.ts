@@ -41,16 +41,16 @@ export class NewTransactionComponent {
 	constructor(private _transactionService: TransactionService) {}
 
 	onSubmit(transactionForm: NgForm) {
-		const d = { 
+		const n = { 
 			total: "string",
 			currency: "string", 
 			from: "string", 
 			description: "string", 
 			direction: "string",
-			date: "string", 
+			date: new Date(), 
 			type: "string" 
 		}
-		this._transactionService.insertTransaction(d);
+		this._transactionService.insertTransaction(n);
 	}
 
 }
