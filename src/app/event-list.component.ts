@@ -7,6 +7,10 @@ import { NewsComponent } from './news.component';
 
 import { EventService } from './event.service';
 
+import { NewsModalComponent } from './news-modal.component';
+
+import { READ_NEWS } from 'mock-read-news';
+
 @Component({
   selector: 'event-list',
   template: `
@@ -17,8 +21,17 @@ import { EventService } from './event.service';
   		</div>
 			<div *ngFor="let item of events">
 				<transaction *ngIf="item.type === 'transaction'" [transaction]="item"></transaction>
-				<news *ngIf="item.type === 'news'" [news]="item"></news>
+				<news 
+          (click)="showModal(item)"
+          *ngIf="item.type === 'news'" 
+          [news]="item">
+        </news>
 			</div>
+      <news-modal 
+        *ngIf="currentNews" 
+        [news]="currentNews"
+        (modalClosed)="hideModal()">
+      </news-modal>
   	</div>
   `,
   styleUrls: ['./app.component.css'],
@@ -29,6 +42,9 @@ export class EventListComponent {
 	public events: (Transaction|News)[];
 	public currentSortValue: string;
   public reverseSort: boolean = false;
+
+  public currentNews: News;
+
 
 	constructor(private _eventService: EventService ) {}
 
@@ -61,5 +77,13 @@ export class EventListComponent {
 	ngOnInit():any {
 		this.getEvents();
 	}
+
+  showModal(item: News) {
+    this.currentNews = item;
+  }
+  
+  hideModal() {
+    this.currentNews = null;
+  } 
 
 }

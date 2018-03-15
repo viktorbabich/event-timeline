@@ -11,7 +11,7 @@ import { EventService } from './event.service';
 import { NewTransactionComponent } from './new-transaction.component';
 import { HeaderComponent } from './header.component';
 import { TransactionService } from './transaction.service';
-
+import { NewsModalComponent } from './news-modal.component';
 
 const appRoutes: Routes = [
   { path: '', component: EventListComponent },
@@ -25,7 +25,8 @@ const appRoutes: Routes = [
     TransactionComponent,
     NewsComponent,
     NewTransactionComponent,
-    HeaderComponent
+    HeaderComponent,
+    NewsModalComponent
   ],
   imports: [
     BrowserModule,
